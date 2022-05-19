@@ -1,28 +1,17 @@
-//Square code
-const squareSide = 5
-const squarePerimeter = squareSide * 4
-const squareArea = squareSide * squareSide 
-
-console.log(`For a square of ${squareSide}cm by side, the perimeter is ${squarePerimeter}cm and the area is ${squareArea}cm^2`)
-
-//Triangle code
-const triangleSide1 = 6
-const triangleSide2 = 6
-const triangleSideBase = 4
-const trianglePerimeter = triangleSide1 + triangleSide2 + triangleSideBase
-const s = trianglePerimeter/2 //*? semiperimeter
-const triangleArea = Math.sqrt(s*(s - triangleSide1)*(s - triangleSide2)*(s - triangleSideBase)) //*? for any triangle knowing only the sides
-
-
-console.log(`For a triangle with ${triangleSideBase}cm of base and ${triangleSide1} and ${triangleSide1}cm of each side, 
-    the perimeter is ${trianglePerimeter}cm and the area is ${parseFloat(triangleArea.toFixed(2))}cm^2`)  
-
-//Circle code
-const circleRadio = 4
-const circleDiameter = circleRadio * 2
+// Square code
+const squarePerimeter = (side) => side * 4
+const squareArea = (side) =>  side**2
+// Triangle code
+const trianglePerimeter = (side1, side2, base) => side1 + side2 + base
+const triangleArea = (side1, side2, base) => {
+    const s = trianglePerimeter(side1, side2, base)/2
+    return Math.sqrt(s*(s - side1)*(s - side2)*(s - base)) 
+} 
+// Cicle code
 const pi = Math.PI
-const circlePerimeter = circleDiameter * pi
-const circleArea = pi * (circleRadio**2)
-
-console.log(`For a circle with ${circleRadio}cm of radio we have a 
-    perimeter of ${circlePerimeter.toFixed(2)}cm and an area of ${circleArea.toPrecision(4)}cm^2`) 
+const circleDiameter = (radio) => radio * 2
+const circlePerimeter = (radio) => {
+    diameter = circleDiameter(radio)
+    return  diameter * Math.PI
+} 
+const circleArea = (radio) => Math.PI * (radio**2)
