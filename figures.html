@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Jura:wght@300;400;500;600;700&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="figures.css">
     <link rel="shorcut icon" href="assets/logo.png">
     <title>Geometric forms</title>
@@ -12,17 +15,32 @@
     <section class="banner">
         <img src="./assets/GForms.svg" alt="logoName">
     </section>
-    <h1>
+    <!-- <h1>
         Geometric forms
-    </h1>
-    <p> First JavaScript hands-on workshop </p>
+    </h1> -->
+    <!-- <p> First JavaScript hands-on workshop </p> -->
+    <nav class="navbar">
+        <a href="./figures.html">
+            <img src="./assets/Square.svg" alt="squareButton">
+        </a>
+        <a href="">
+            <img src="./assets/Triangle.svg" alt="squareTriangle">
+        </a>
+        <a href="">
+            <img src="./assets/Circle.svg" alt="squareCircle">
+        </a>
+    </nav>
     <section class="cardSquare">
-        <label for="squareButton"> Side:</label>
-        <input id="squareButton" type="number">
-        <button type="button" onclick="calculeFigure()"> Calculate </button>
-        <p id="pResult"> Perimetro </p>
-        <p id="aResult"> Area </p>
-
+        <div>
+            <label for="squareInput"> Side: </label>
+            <input id="squareInput" type="number">
+            <button type="button" onclick="calculeFigure()"> Calculate </button>
+            <p id="pResult"> Perimetro </p>
+            <p id="aResult"> Area </p>
+        </div>
+        <div>
+            
+        </div>
     </section>
 
     <script src="./figures.js"></script>
