@@ -18,7 +18,10 @@ const circleArea = (radio) => Math.PI * (radio**2)
 
 function calculeFigure(){
     const input = document.getElementById("squareButton")
+    const pResponse = document.getElementById("pResult")
+    const aResponse = document.getElementById("aResult")
+    
     const value = input.value
-    alert(`Perimetro: ${squarePerimeter(value)}
-    Area: ${squareArea(value)}`)
+    pResponse.innerHTML = squarePerimeter(value)
+    aResponse.innerHTML = squareArea(value)
 }
