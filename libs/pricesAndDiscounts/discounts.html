@@ -8,7 +8,18 @@
 </head>
 <body>
     <h1> Prices and discounts</h1>
+    <section>
+        <p>Calculate the final price of yours products </p>
 
+        <form>
+            <label for="inputPrice"> Write the price of your product: </label> <br>
+            <input id="inputPrice" type="number" placeholder="Insert price"> <br>
+            <label for="inputDiscount"> Write the discount of your product: </label> <br>
+            <input id="inputDiscount" type="number" placeholder="Insert discount"> <br>
+            <button type="button" onclick="finalPrice()"> Calculate the final price </button>
+            <p id="resultPrice"> Final price </p>
+        </form>
+    </section>
     <script src="./discounts.js"></script>
 </body>
 </html>

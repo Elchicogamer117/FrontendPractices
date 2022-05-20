@@ -1,11 +1,17 @@
-const originalPrice = 120
-const discount = 18
-const percenPriceDiscount = 100 - discount
-const priceDiscount = (originalPrice*percenPriceDiscount)/100
+function calPriceDiscount(price, discount){
+    const percenPriceDiscount = 100 - discount
+    const priceDiscount = (price*percenPriceDiscount)/100
+    return priceDiscount
+}
 
-console.log({
-    originalPrice,
-    discount,
-    percenPriceDiscount,
-    priceDiscount
-});
+function finalPrice(){
+    const inputPrice = document.getElementById("inputPrice")
+    const inputDiscount = document.getElementById("inputDiscount")
+    const resultPrice = document.getElementById("resultPrice")
+
+    const price = inputPrice.value
+    const discount = inputDiscount.value
+    
+    resultPrice.innerText = `Final price: ${calPriceDiscount(price, discount)}`
+    console.log(typeof(price))
+}
