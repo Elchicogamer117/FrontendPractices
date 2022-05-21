@@ -16,7 +16,7 @@ const circlePerimeter = (radio) => {
 } 
 const circleArea = (radio) => Math.PI * (radio**2)
 
-function calculeFigure(){
+function calculeSquare(){
     const input = document.getElementById("squareInput")
     const pResponse = document.getElementById("pResult")
     const aResponse = document.getElementById("aResult")
@@ -24,4 +24,18 @@ function calculeFigure(){
     const value = input.value
     pResponse.innerHTML = squarePerimeter(value)
     aResponse.innerHTML = squareArea(value)
+}
+
+function calculeTriangle(){
+    const input1 = document.getElementById("side1Input")
+    const input2 = document.getElementById("side2Input")
+    const input3 = document.getElementById("baseInput")
+    const pResponse = document.getElementById("pResult")
+    const aResponse = document.getElementById("aResult")
+
+    const side1 = parseInt(input1.value, 10) 
+    const side2 = parseInt(input2.value, 10) 
+    const base = parseInt(input3.value, 10) 
+    pResponse.innerHTML = trianglePerimeter(side1,side2,base)
+    aResponse.innerHTML = triangleArea(side1,side2,base).toPrecision(4)
 }

@@ -6,8 +6,7 @@
 body {
     min-height: 100vh;
     margin: 0;
-    background-color: #023e4d;
-    background: linear-gradient(#100085,#080062);
+    background: linear-gradient(#100085,#080048);
     font-family: 'Jura', sans-serif;
 }
 body::-webkit-scrollbar {
@@ -49,12 +48,13 @@ body::-webkit-scrollbar-thumb{
     margin: 40px auto 10px auto;
     text-align: center;
 }
-#squareInput {
+#side1Input, #side2Input, #baseInput {
     width: 300px;
     font-size: 28px;
     padding: 8px;
     border-radius: 15px;
     text-align: center;
+    margin-top: 4px;
 }
 #squareInput::placeholder {
     text-align: center;
