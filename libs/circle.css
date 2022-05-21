@@ -1,0 +1,111 @@
+:root {
+    --formsDetail: invert(90%) sepia(72%) saturate(2%) hue-rotate(265deg) brightness(105%) contrast(100%);
+    --textcolor: #FFFFFF;
+    --detailColor: #90007a;
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(#100085,#080048);
+    font-family: 'Jura', sans-serif;
+}
+body::-webkit-scrollbar {
+    width: 12px;
+    background:#800000;
+}
+body::-webkit-scrollbar-thumb{
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+.banner {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: azure;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px 25px 0 0;
+}
+.cardSquare {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 25PX 25px;
+    color: var(--textcolor);
+}
+.cardSquare p {
+    font-size: 40px;
+}
+.dataInput{
+    margin: 40px auto 10px auto;
+    text-align: center;
+}
+#side1Input, #side2Input, #baseInput {
+    width: 300px;
+    font-size: 28px;
+    padding: 8px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 4px;
+}
+#squareInput::placeholder {
+    text-align: center;
+}
+.calculateButton {
+    margin-top: 20px;
+    width: 400px;
+    font-size: 28px;
+    padding: 8px;
+    background-color: var(--detailColor);
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+.calculateButton:hover {
+    background-color: #AC0092;
+}
+.dataShow {
+    margin: 40px auto 20px auto;
+    width: 250px;
+    filter: var(--formsDetail);
+}
+.results {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 80%;
+    margin: 0 auto 0 auto;
+    border-radius: 25px;
+    margin-bottom: 60px;
+}
+.iconImg {
+    background-color: var(--detailColor);
+    border-radius: 25px 0 0 25px;
+    padding-top: 20px;
+}
+.iconImg div {
+    height: 50%;
+    justify-items: center;
+}
+.apImg {
+    width: 80px;
+}
+#aResult, #pResult {
+    margin-left: 12px;
+}
+@media (max-width: 1080px) {
+    .cardSquare {
+        grid-template-columns: auto;
+    }
+    .calculateButton {
+        width: 300px;
+    }
+}
