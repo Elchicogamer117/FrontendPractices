@@ -1,7 +1,7 @@
 :root {
     --formsDetail: invert(90%) sepia(72%) saturate(2%) hue-rotate(265deg) brightness(105%) contrast(100%);
     --textcolor: #FFFFFF;
-    --detailColor: #90007a;
+    --detailColor: #5600FA;
 }
 body {
     min-height: 100vh;
@@ -11,7 +11,7 @@ body {
 }
 body::-webkit-scrollbar {
     width: 12px;
-    background:#000050;
+    background:var(--detailColor);
 }
 body::-webkit-scrollbar-thumb{
     background: #FFFFFF;
@@ -74,7 +74,7 @@ body::-webkit-scrollbar-thumb{
     cursor: pointer;
 }
 .calculateButton:hover {
-    background-color: #AC0092;
+    background-color: #4000b6;
 }
 .dataShow {
     margin: 40px auto 20px auto;
@@ -101,6 +101,7 @@ body::-webkit-scrollbar-thumb{
 }
 .apImg {
     width: 80px;
+    filter: var(--formsDetail);
 }
 #aResult, #pResult {
     margin-left: 12px;

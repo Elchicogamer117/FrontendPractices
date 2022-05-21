@@ -22,8 +22,8 @@ function calculeSquare(){
     const aResponse = document.getElementById("aResult")
 
     const value = input.value
-    pResponse.innerHTML = squarePerimeter(value)
-    aResponse.innerHTML = squareArea(value)
+    pResponse.innerHTML = squarePerimeter(value).toPrecision(6)
+    aResponse.innerHTML = squareArea(value).toPrecision(6)
 }
 
 function calculeTriangle(){
@@ -36,8 +36,8 @@ function calculeTriangle(){
     const side1 = parseInt(input1.value, 10) 
     const side2 = parseInt(input2.value, 10) 
     const base = parseInt(input3.value, 10) 
-    pResponse.innerHTML = trianglePerimeter(side1,side2,base)
-    aResponse.innerHTML = triangleArea(side1,side2,base).toPrecision(4)
+    pResponse.innerHTML = trianglePerimeter(side1,side2,base).toPrecision(6)
+    aResponse.innerHTML = triangleArea(side1,side2,base).toPrecision(6)
 }
 function calculeCircle(){
     const input1 = document.getElementById("circleInput")

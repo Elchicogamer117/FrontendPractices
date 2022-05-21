@@ -12,7 +12,7 @@ body {
 }
 body::-webkit-scrollbar {
     width: 12px;
-    background:#800000;
+    background:var(--detailColor);
 }
 body::-webkit-scrollbar-thumb{
     background: #FFFFFF;
@@ -101,6 +101,7 @@ body::-webkit-scrollbar-thumb{
 }
 .apImg {
     width: 80px;
+    filter: var(--formsDetail);
 }
 #aResult, #pResult {
     margin-left: 12px;
