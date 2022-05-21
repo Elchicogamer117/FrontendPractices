@@ -6,12 +6,12 @@
 body {
     min-height: 100vh;
     margin: 0;
-    background: linear-gradient(#100085,#080048);
+    background: linear-gradient(#005822,#002006);
     font-family: 'Jura', sans-serif;
 }
 body::-webkit-scrollbar {
     width: 12px;
-    background:#800000;
+    background:#006012;
 }
 body::-webkit-scrollbar-thumb{
     background: #FFFFFF;
@@ -25,10 +25,14 @@ body::-webkit-scrollbar-thumb{
 .navbar {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: azure;
+    background-color: rgba(255, 255, 255, 0.5);
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 25px 25px 0 0;
+}
+.navbar a:hover {
+    background-color: #FFFFFF;
     border-radius: 25px 25px 0 0;
 }
 .cardSquare {
@@ -48,7 +52,7 @@ body::-webkit-scrollbar-thumb{
     margin: 40px auto 10px auto;
     text-align: center;
 }
-#side1Input, #side2Input, #baseInput {
+#circleInput {
     width: 300px;
     font-size: 28px;
     padding: 8px;
