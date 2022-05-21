@@ -13,7 +13,7 @@
 </head>
 <body>
     <section class="banner">
-        <img src="./assets/GForms.svg" alt="logoName">
+        <img src="./assets/icons/gForms.svg" alt="logoName">
     </section>
     <!-- <h1>
         Geometric forms
@@ -21,24 +21,42 @@
     <!-- <p> First JavaScript hands-on workshop </p> -->
     <nav class="navbar">
         <a href="./figures.html">
-            <img src="./assets/Square.svg" alt="squareButton">
+            <img src="./assets/img/square.svg" alt="squareButton">
         </a>
         <a href="">
-            <img src="./assets/Triangle.svg" alt="squareTriangle">
+            <img src="./assets/img/triangle.svg" alt="squareTriangle">
         </a>
         <a href="">
-            <img src="./assets/Circle.svg" alt="squareCircle">
+            <img src="./assets/img/circle.svg" alt="squareCircle">
         </a>
     </nav>
     <section class="cardSquare">
-        <div>
-            <label for="squareInput"> Side: </label>
-            <input id="squareInput" type="number">
-            <button type="button" onclick="calculeFigure()"> Calculate </button>
-            <p id="pResult"> Perimetro </p>
-            <p id="aResult"> Area </p>
+        <div class="dataInput">
+            <p> Calculate <br> the area and perimeter <br> of a square </p>
+            <!-- <label for="squareInput"> Side: </label> -->
+            <input id="squareInput" placeholder="Insert side" type="number"> <br>
+            <button type="button" onclick="calculeFigure()" class="calculateButton"> Calculate </button>
+            
         </div>
         <div>
+            <section class="dataShow">
+                <img src="./assets/img/sqInfo.svg" alt="squareDetails" >
+            </section>
+            <section class="results">
+                <div class="iconImg">
+                    <div>
+                        <img src="./assets/img/sqArea.png" alt="squareArea" class="apImg">
+                    </div>
+                    <div>
+                        <img src="./assets/img/sqPer.png" alt="squarePerimeter" class="apImg">
+                    </div>
+                </div>
+                <div>
+                        <p id="aResult"> Area </p>
+                        <p id="pResult"> Perimetro </p>
+                </div>
+
+            </section>
             
         </div>
     </section>
