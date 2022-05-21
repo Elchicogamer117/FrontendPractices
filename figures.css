@@ -10,6 +10,14 @@ body {
     background: linear-gradient(#500000,#680000);
     font-family: 'Jura', sans-serif;
 }
+body::-webkit-scrollbar {
+    width: 12px;
+    background:#800000;
+}
+body::-webkit-scrollbar-thumb{
+    background: #FFFFFF;
+    border-radius: 5px;
+}
 .banner {
     width: 400px;
     margin-left: auto;
@@ -65,7 +73,7 @@ body {
     background-color: #AC0092;
 }
 .dataShow {
-    margin: 0 auto 0 auto;
+    margin: 40px auto 20px auto;
     width: 250px;
     filter: var(--formsDetail);
 }
@@ -76,7 +84,7 @@ body {
     width: 80%;
     margin: 0 auto 0 auto;
     border-radius: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 60px;
 }
 .iconImg {
     background-color: var(--detailColor);
