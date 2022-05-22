@@ -1,0 +1,78 @@
+:root {
+    --clear: #FFFFFF;
+    --detailColor: #A88C12;
+}
+body {
+    min-height: 95vh;
+    margin: 0;
+    background: radial-gradient(#00acd6, #005064);
+    font-family: 'Jura', sans-serif;
+}
+body::-webkit-scrollbar {
+    width: 12px;
+    background:var(--detailColor);
+}
+body::-webkit-scrollbar-thumb{
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+.title {
+    width: 500px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    font-size: 28px;
+    color: var(--clear);
+    padding: 0;
+}
+.title img {
+    margin-top: 28px;
+}
+.cardForm {
+    width: 50%;
+    margin: 0 auto 0 auto;
+    background: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.cardForm input, select {
+    width: 250px;
+    padding: 12px;
+    margin: 8px;
+    border-radius: 8px;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+    appearance: none;
+}
+.cardForm button {
+    width: 275px;
+    padding: 12px;
+    margin: 20px;
+    border-radius: 12px;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+    color: var(--clear);
+    cursor: pointer;
+    background-color: var(--detailColor);
+}
+.cardForm button:hover {
+    background-color: #66560e;
+}
+.cardForm p {
+    font-weight: bold;
+}
+#resultPrice {
+    margin: 0;
+    color: var(--clear);
+    font-size: 40px;
+}
+@media (max-width: 1080px) {
+    .cardForm {
+        width: 500px;
+    }
+}
