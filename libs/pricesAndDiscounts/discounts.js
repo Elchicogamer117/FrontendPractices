@@ -7,11 +7,22 @@ function calPriceDiscount(price, discount){
 function finalPrice(){
     const inputPrice = document.getElementById("inputPrice")
     const inputDiscount = document.getElementById("inputDiscount")
+    const inputCoupon = document.getElementById("coupon")
     const resultPrice = document.getElementById("resultPrice")
 
     const price = inputPrice.value
-    const discount = inputDiscount.value
+    let discount 
+    if (inputDiscount.value == ""){
+        discount = 0
+    }
+    else {
+        discount = parseFloat(inputDiscount.value)
+    }
+    const coupon = parseFloat(inputCoupon.value)
+    const totalDiscount = discount + coupon
     
-    resultPrice.innerText = `Final price: ${calPriceDiscount(price, discount)}`
-    console.log(typeof(price))
+    resultPrice.innerText = calPriceDiscount(price, totalDiscount)
+    console.log(inputDiscount.value)
+    console.log(discount)
+
 }

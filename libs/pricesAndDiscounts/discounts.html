@@ -4,22 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prices and discounts</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="discounts.css">
+    <link rel="shorcut icon" href="../../assets/icons/logoDiscount.png">
+    <title> How much pay? </title>
 </head>
 <body>
-    <h1> Prices and discounts</h1>
-    <section>
+    <section class="title">
+        <img src="../../assets/icons/logoDiscount.png" alt="logo">
+        <h1> How much pay? </h1>
         <p>Calculate the final price of yours products </p>
+    </section>
 
-        <form>
+    <section class="cardForm" >
+        <form class="form">
             <label for="inputPrice"> Write the price of your product: </label> <br>
             <input id="inputPrice" type="number" placeholder="Insert price"> <br>
             <label for="inputDiscount"> Write the discount of your product: </label> <br>
             <input id="inputDiscount" type="number" placeholder="Insert discount"> <br>
+            <label for="coupon"> Do you have a coupon? </label><br>
+            <select name="coupons" id="coupon">
+                <option value="0"> Negative </option>
+                <option value="11.7"> John 11.7 </option>
+                <option value="34.3"> 34.3 Industries </option>
+                <option value="21.6"> Echo 21.6 </option>
+            </select> <br>
             <button type="button" onclick="finalPrice()"> Calculate the final price </button>
-            <p id="resultPrice"> Final price </p>
+            <p> Final price: </p>
+            <p id="resultPrice"></p>
         </form>
     </section>
+    
+    
     <script src="./discounts.js"></script>
 </body>
 </html>
