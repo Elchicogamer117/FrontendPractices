@@ -5,35 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="meMeMo.css">
+    <link rel="shorcut icon" href="../../assets/icons/iconMMM2.svg">
     <title> MeMeMo </title>
 </head>
 <body>
-    <h1> Means, Media & Mode</h1>
-    <section class="inputList">
-        <label for="inputList"> Insert your number list </label>
-        <input id="inputList" type="text" placeholder="Ex. 15, 11, 2001, 117, 343, 216"> 
+    <section class="banner">
+        <img src="../../assets/icons/meMeMoLogoW.svg" alt="logo">
+        <h1> Means, Media & Mode</h1>
     </section>
-    <section class="Description">
-        <p> Select the operation you want to perfom </p>
+    <section class="container">
+
+        <section class="inputList">
+            <label for="inputList"> Insert your number list </label> <br>
+            <input id="inputList" type="text" placeholder="Ex. 15, 11, 2001, 117, 343, 216"> 
+        </section>
+            <p> Select the operation you want to perfom </p>
+        <section class="cards">
+            <div class="cardCalculate">
+                <input type="image" onclick="showMean()" src="../../assets/img/meMeMo/mean.svg" name="Mean">
+                <!-- <button type="button" onclick="showMean()"> Mean </button> -->
+            </div>
+            <div class="cardCalculate">
+                <input type="image" onclick="showGMean()" src="../../assets/img/meMeMo/gmean.svg" name="Mean">
+                <!-- <button type="button" onclick="showGMean()"> Geometric mean </button> -->
+            </div>
+            <div class="cardCalculate">
+                <input type="image" onclick="showMedian()" src="../../assets/img/meMeMo/median.svg" name="Mean">
+                <!-- <button type="button" onclick="showMedian()"> Median </button> -->
+
+            </div>
+            <div class="cardCalculate">
+                <input type="image" onclick="showMode()" src="../../assets/img/meMeMo/mode.svg" name="Mean">
+                <!-- <button type="button" onclick="showMode()"> Mode </button> -->
+            </div>
+        </section>
+        <p id="operatioResult">--</p>
+        <p id="description"></p>
+
     </section>
-    <section class="cards">
-        <div class="cardCalculate">
-            <button type="button" onclick="showMean()"> Mean </button>
-            <p id="meanResult"></p>
-        </div>
-        <div class="cardCalculate">
-            <button type="button" onclick="showGMean()"> Geometric mean </button>
-            <p id="gMeanResult"></p>
-        </div>
-        <div class="cardCalculate">
-            <button type="button" onclick="showMedian()"> Median </button>
-            <p id="medianResult"></p>
-        </div>
-        <div class="cardCalculate">
-            <button type="button" onclick="showMode()"> Mode </button>
-            <p id="modeResult"></p>
-        </div>
-    </section>
+    
 
     <script src="./mean.js"></script>
     <script src="./gmean.js"></script>

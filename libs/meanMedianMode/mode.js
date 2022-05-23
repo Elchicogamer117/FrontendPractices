@@ -25,5 +25,6 @@ function showMode(){
     const inputList = document.getElementById("inputList")
     const list = Array.from(inputList.value.split(","), Number)
 
-    modeResult.innerText = mode(list)
+    operatioResult.innerText = mode(list)
+    description.innerText = "The mode is the value that appears most often in a set of data values. Like the statistical mean and median, the mode is a way of expressing, in a (usually) single number, important information about a random variable or a population. "
 }

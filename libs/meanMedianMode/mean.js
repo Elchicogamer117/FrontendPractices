@@ -8,5 +8,6 @@ function showMean(){
     const inputList = document.getElementById("inputList")
     const list = Array.from(inputList.value.split(","), Number)
 
-    meanResult.innerText = calculateMean(list).toFixed(2)
+    operatioResult.innerText = calculateMean(list).toFixed(2)
+    description.innerText = "The arithmetic mean or arithmetic average, or simply just the mean or the average (when the context is clear), is the sum of a collection of numbers divided by the count of numbers in the collection"
 }

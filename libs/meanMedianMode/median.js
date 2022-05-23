@@ -15,5 +15,6 @@ function showMedian(){
     const inputList = document.getElementById("inputList")
     const list = Array.from(inputList.value.split(","), Number)
 
-    medianResult.innerText = calculateMedian(list).toFixed(2)
+    operatioResult.innerText = calculateMedian(list).toFixed(2)
+    description.innerText = "The median is the value separating the higher half from the lower half of a data sample, a population, or a probability distribution."
 }

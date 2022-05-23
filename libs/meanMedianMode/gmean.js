@@ -8,5 +8,6 @@ function showGMean(){
     const inputList = document.getElementById("inputList")
     const list = Array.from(inputList.value.split(","), Number)
     
-    gMeanResult.innerText = calculateGmean(list).toFixed(2)
+    operatioResult.innerText = calculateGmean(list).toFixed(2)
+    description.innerText = "The geometric mean is an average that is useful for sets of positive numbers, that are interpreted according to their product (as is the case with rates of growth) and not their sum (as is the case with the arithmetic mean)"
 }
