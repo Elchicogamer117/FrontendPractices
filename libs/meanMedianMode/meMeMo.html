@@ -13,37 +13,35 @@
         <img src="../../assets/icons/meMeMoLogoW.svg" alt="logo">
         <h1> Means, Media & Mode</h1>
     </section>
+
     <section class="container">
 
         <section class="inputList">
             <label for="inputList"> Insert your number list </label> <br>
             <input id="inputList" type="text" placeholder="Ex. 15, 11, 2001, 117, 343, 216"> 
         </section>
+
             <p> Select the operation you want to perfom </p>
+
         <section class="cards">
             <div class="cardCalculate">
                 <input type="image" onclick="showMean()" src="../../assets/img/meMeMo/mean.svg" name="Mean">
-                <!-- <button type="button" onclick="showMean()"> Mean </button> -->
             </div>
             <div class="cardCalculate">
                 <input type="image" onclick="showGMean()" src="../../assets/img/meMeMo/gmean.svg" name="Mean">
-                <!-- <button type="button" onclick="showGMean()"> Geometric mean </button> -->
             </div>
             <div class="cardCalculate">
                 <input type="image" onclick="showMedian()" src="../../assets/img/meMeMo/median.svg" name="Mean">
-                <!-- <button type="button" onclick="showMedian()"> Median </button> -->
-
             </div>
             <div class="cardCalculate">
                 <input type="image" onclick="showMode()" src="../../assets/img/meMeMo/mode.svg" name="Mean">
-                <!-- <button type="button" onclick="showMode()"> Mode </button> -->
             </div>
         </section>
+
         <p id="operatioResult">--</p>
         <p id="description"></p>
 
     </section>
-    
 
     <script src="./mean.js"></script>
     <script src="./gmean.js"></script>
