@@ -76,6 +76,10 @@ body::-webkit-scrollbar-thumb{
     margin: 24px auto 0 auto;
     font-weight: bold;
 }
+.examples {
+    text-align: center;
+    font-weight: semibold;
+}
 @media (max-width: 640px) {
     .cards {
         grid-template-columns:repeat(auto-fill, 50%);
