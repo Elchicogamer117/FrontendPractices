@@ -3,4 +3,10 @@ function calculateGmean(list){
     const squareList = multList ** (1 / list.length)
     return squareList
 }
-console.log(calculateGmean([2,2,4]).toFixed(8))
+
+function showGMean(){
+    const inputList = document.getElementById("inputList")
+    const list = Array.from(inputList.value.split(","), Number)
+    
+    gMeanResult.innerText = calculateGmean(list).toFixed(2)
+}

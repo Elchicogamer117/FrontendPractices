@@ -10,7 +10,7 @@ function calculateMode(list){
     const orderedList = Object.entries(objectList).sort((a,b) => b[1] - a[1])
     const mode = orderedList[0]
 
-    return mode
+    return mode[0]
 }
 
 //* Less code, more execution time
@@ -19,4 +19,11 @@ function mode(arr){
         arr.filter(v => v===a).length
         - arr.filter(v => v===b).length
     ).pop();
+}
+
+function showMode(){
+    const inputList = document.getElementById("inputList")
+    const list = Array.from(inputList.value.split(","), Number)
+
+    modeResult.innerText = mode(list)
 }

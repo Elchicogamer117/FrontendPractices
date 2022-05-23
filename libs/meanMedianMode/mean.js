@@ -4,4 +4,9 @@ function calculateMean (list) {
     return meanList
 }
 
-console.log(calculateMean([100,200,300,500]))
+function showMean(){
+    const inputList = document.getElementById("inputList")
+    const list = Array.from(inputList.value.split(","), Number)
+
+    meanResult.innerText = calculateMean(list).toFixed(2)
+}

@@ -11,5 +11,9 @@ function calculateMedian(list){
     return median
 }
 
-console.log(calculateMedian([2000,10,800,1,50,10000]));
-console.log(calculateMedian([2000,10,10000,800,1,50,20]));
+function showMedian(){
+    const inputList = document.getElementById("inputList")
+    const list = Array.from(inputList.value.split(","), Number)
+
+    medianResult.innerText = calculateMedian(list).toFixed(2)
+}
