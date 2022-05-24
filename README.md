@@ -17,3 +17,6 @@
 - Second step: Implement formulas in JavaScript
 - Third step: Create functions
 - Fourth step: Integrate JS with HTML
+
+## Workshop 4: Salary analysis 🎇
+- Applying  previous functionalities 
