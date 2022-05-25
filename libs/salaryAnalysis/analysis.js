@@ -30,3 +30,11 @@ const orderedSalReach = salarysReach.sort((a,b) => a - b);
     meanGeneral.innerText = calculateMean(salarysReach);
     meanTop.innerText = calculateMean(topSalaryReach);
 }
+
+let listCitizens = "<ol>"
+for (let citizen of reach){
+    listCitizens += `<li>  ${citizen.name}: ${citizen.salary} cdt </li>`
+}
+listCitizens += "</ol>"
+
+citizens.innerHTML = listCitizens
