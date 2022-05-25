@@ -18,12 +18,11 @@ function calculateMedian(list){
 
 const salarysReach = reach.map((person) => person.salary);
 const orderedSalReach = salarysReach.sort((a,b) => a - b);
-const generalSalReach = [...orderedSalReach]; //*? <- Creating a copy because the splice method modifies the original list
 
-const percent = (generalSalReach.length / 10) * 9;
+const start = (orderedSalReach.length / 10) * 9;
+const end = orderedSalReach.length;
+const topSalaryReach = orderedSalReach.slice(start,end);
 
-const frags = generalSalReach.length - percent;
-const topSalaryReach = generalSalReach.splice(percent,frags);
 const generalMedianReach = calculateMedian(orderedSalReach);
 const topMedianReach = calculateMedian(topSalaryReach);
 
