@@ -7,7 +7,28 @@
     <title>Salary analysis</title>
 </head>
 <body>
-    <h1> Salary analysis </h1>
+    <section class="banner">
+        <h1> Salary analysis </h1>
+    </section>
+
+    <section class="card">
+        <section class="data">
+            <div class="analysis">
+                <p> Mean general: </p>
+                <p id="meanGeneral"> -- </p>
+                <p> Median general: </p>
+                <p id="medianGeneral"> -- </p>
+            </div>
+            <div class="analysis">
+                <p> Mean top 10%: </p>
+                <p id="meanTop"> -- </p>
+                <p> Median top 10%: </p>
+                <p id="medianTop"> -- </p>
+            </div>
+            <button type="button" onclick="calculateAnalysis()" class="calculateButton"> Calculate </button>
+        </section>
+    </section>
+    
     <script src="./salarys.js"></script>
     <script src="./analysis.js"></script>
 </body>

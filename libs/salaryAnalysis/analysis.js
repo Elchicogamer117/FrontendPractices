@@ -16,26 +16,17 @@ function calculateMedian(list){
     }
 }
 
-const salarysReach = reach.map((person) => person.salary);
+function calculateAnalysis(){
+    const salarysReach = reach.map((person) => person.salary);
 const orderedSalReach = salarysReach.sort((a,b) => a - b);
 
-const start = (orderedSalReach.length / 10) * 9;
-const end = orderedSalReach.length;
-const topSalaryReach = orderedSalReach.slice(start,end);
+    const start = (orderedSalReach.length / 10) * 9;
+    const end = orderedSalReach.length;
+    const topSalaryReach = orderedSalReach.slice(start,end);
 
-const generalMedianReach = calculateMedian(orderedSalReach);
-const topMedianReach = calculateMedian(topSalaryReach);
+    medianGeneral.innerText = calculateMedian(orderedSalReach);
+    medianTop.innerText = calculateMedian(topSalaryReach);
 
-const generalMeanReach = calculateMean(salarysReach);
-const topMeanReach = calculateMean(topSalaryReach);
-
-console.log( orderedSalReach);
-console.log({
-    generalMedianReach,
-    topMedianReach,
-});
-console.log({
-    generalMeanReach,
-    topMeanReach,
-});
-
+    meanGeneral.innerText = calculateMean(salarysReach);
+    meanTop.innerText = calculateMean(topSalaryReach);
+}
