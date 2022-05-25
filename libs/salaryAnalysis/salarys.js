@@ -2,15 +2,15 @@ const reach = [];
 
 reach.push({
     name: 'Jonhson',
-    salary: 780,
+    salary: 7800,
 })
 reach.push({
     name: 'Alsey',
-    salary: 660,
+    salary: 409871,
 })
 reach.push({
     name: 'John',
-    salary: 1170,
+    salary: 117343,
 })
 reach.push({
     name: 'Cortana',
@@ -95,4 +95,28 @@ reach.push({
 reach.push({
     name: 'Grace',
     salary: 930,
+})
+reach.push({
+    name: 'Jacob Keys',
+    salary: 192819912,
+})
+reach.push({
+    name: 'Miranda Keys',
+    salary: 1597219891,
+})
+reach.push({
+    name: 'Daisy',
+    salary: 230,
+})
+reach.push({
+    name: 'Robert',
+    salary: 25,
+})
+reach.push({
+    name: 'Issac',
+    salary: 390,
+})
+reach.push({
+    name: 'Guilty Spark',
+    salary: 343,
 })
