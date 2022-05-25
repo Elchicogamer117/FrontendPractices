@@ -1,6 +1,3 @@
-const salarysReach = reach.map((person) => person.salary);
-const orderedSalReach = salarysReach.sort((a,b) => a - b);
-
 function calculateMedian(list){
     const middle = parseInt(list.length / 2)
 
@@ -12,7 +9,19 @@ function calculateMedian(list){
         return median2
     }
 }
-console.log(reach);
-console.log(salarysReach);
+
+const salarysReach = reach.map((person) => person.salary);
+const orderedSalReach = salarysReach.sort((a,b) => a - b);
+
+const percent = (orderedSalReach.length / 10) * 9
+const frags = orderedSalReach.length / 10
+const topSalaryReach = orderedSalReach.splice(percent,frags);
+
+const generalMedianReach = calculateMedian(orderedSalReach);
+const topMedianReach = calculateMedian(topSalaryReach);
+
 console.log(orderedSalReach);
-console.log(calculateMedian(orderedSalReach));
+console.log({
+    generalMedianReach,
+    topMedianReach,
+});
