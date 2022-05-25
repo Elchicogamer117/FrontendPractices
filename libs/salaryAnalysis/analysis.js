@@ -18,7 +18,7 @@ function calculateMedian(list){
 
 function calculateAnalysis(){
     const salarysReach = reach.map((person) => person.salary);
-const orderedSalReach = salarysReach.sort((a,b) => a - b);
+    const orderedSalReach = salarysReach.sort((a,b) => a - b);
 
     const start = (orderedSalReach.length / 10) * 9;
     const end = orderedSalReach.length;
@@ -29,12 +29,34 @@ const orderedSalReach = salarysReach.sort((a,b) => a - b);
 
     meanGeneral.innerText = calculateMean(salarysReach);
     meanTop.innerText = calculateMean(topSalaryReach);
+    
+}
+
+function addingCitizen(){
+    const inputName = document.getElementById("inputName")
+    const inputSalary = document.getElementById("inputSalary")
+
+    const name = inputName.value
+    const salary = parseInt(inputSalary.value)
+
+    reach.push({
+        name: name || 'Soldier',
+        salary: salary || 15,
+    })
+
+    let listCitizens = "<ol>"
+    for (let citizen of reach){
+        listCitizens += `<li>  ${citizen.name}: ${citizen.salary} cdt </li>`
+    }
+    listCitizens += "</ol>"
+
+    citizens.innerHTML = listCitizens
 }
 
 let listCitizens = "<ol>"
-for (let citizen of reach){
-    listCitizens += `<li>  ${citizen.name}: ${citizen.salary} cdt </li>`
-}
-listCitizens += "</ol>"
+    for (let citizen of reach){
+        listCitizens += `<li>  ${citizen.name}: ${citizen.salary} cdt </li>`
+    }
+    listCitizens += "</ol>"
 
-citizens.innerHTML = listCitizens
+    citizens.innerHTML = listCitizens
