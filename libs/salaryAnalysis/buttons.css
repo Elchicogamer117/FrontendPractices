@@ -1,0 +1,41 @@
+.actionButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px;
+    padding: 4px;
+    width: 50%;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.6);
+    color: #ffffff;
+    transition: .2s ease all;
+    position: relative;
+    overflow: hidden;
+}
+.actionButton.move::after{
+    content: "";
+    width: 100%;
+    /* height: 100%; */
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: calc(-100% - 40px);
+    border-bottom: 40px solid rgba(0, 11, 105, 0.75);
+    border-right: 40px solid transparent;
+    transition: .4s ease-in-out all;
+}
+.actionButton.actionButton.move:hover::after {
+    left: 0;
+}
+.actionButton span {
+    position: relative;
+    z-index: 2;
+    transition: .4s ease all;
+}
+.actionButton:hover {
+    transform: scale(105%);
+}
