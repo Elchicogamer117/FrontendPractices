@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./salaryAnalysis.css">
+
     <title>Salary analysis</title>
 </head>
 <body>
@@ -11,7 +13,7 @@
         <h1> Salary analysis </h1>
     </section>
 
-    <section class="card">
+    <section class="cardLeft">
         <section class="data">
             <div class="analysis">
                 <p> Mean general: </p>
@@ -25,26 +27,26 @@
                 <p> Median top 10%: </p>
                 <p id="medianTop"> -- </p>
             </div>
-            <button type="button" onclick="calculateAnalysis()" class="calculateButton"> Calculate </button>
         </section>
-
+        
+        <button type="button" onclick="calculateAnalysis()" class="actionButton move"> <span> Calculate </span> </button>
+        
         <section class="addCitizen">
             <p> Add citizen: </p>
             <label for="inputName"> Name: </label><br>
             <input type="text" name="nameCitizen" id="inputName"><br>
             <label for="inputSalary"> Salary: </label><br>
             <input type="text" name="nameSalary" id="inputSalary"><br>
-            <button type="button" onclick="addingCitizen()" class="calculateButton"> Add citizen </button>
+            <button type="button" onclick="addingCitizen()" class="actionButton move"> <span> Add citizen </span> </button>
         </section>
-
-        <section class="citizens">
-            <div>
-                List of citizens
-            </div>
-            <div>
-                <p id="citizens"></p>
-            </div>
-        </section>
+    </section>
+    <section class="citizens">
+        <div>
+            List of citizens
+        </div>
+        <div>
+            <p id="citizens"></p>
+        </div>
     </section>
     
     <script src="./salarys.js"></script>
