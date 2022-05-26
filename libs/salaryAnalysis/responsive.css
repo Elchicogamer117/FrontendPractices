@@ -1,0 +1,40 @@
+:root {
+    --sm: 16px;
+    --md: 20px;
+    --lg: 24px;
+}
+@media (max-width: 640px) {
+    .banner {
+        height: 50px;
+        font-size: var(--sm);
+    }
+    .description {
+        width: 90%;
+    }
+    .container {
+        grid-template-columns: auto;
+    }
+    .cardLeft {
+        height: 550px;
+        margin: 4px auto 16px auto;
+        padding-top: 4px;
+
+    }
+    .cardLeft p {
+        font-weight: bold;
+        font-size: var(--md);
+    }
+    .addCitizen label{
+        font-size:var(--sm)
+    }
+    #inputName,#inputSalary {
+        width: 40%;
+
+    }
+    #inputName:focus,#inputSalary:focus {
+        width: 50%;
+    }
+    #citizensCount {
+        margin:  0 0 4px 0;
+    }
+}
