@@ -25,10 +25,12 @@ function calculateAnalysis(){
     const topSalaryReach = orderedSalReach.slice(start,end);
 
     medianGeneral.innerText = calculateMedian(orderedSalReach);
-    medianTop.innerText = calculateMedian(topSalaryReach);
+    medianTop.innerText = calculateMedian(topSalaryReach).toFixed(2);
 
-    meanGeneral.innerText = calculateMean(salarysReach);
-    meanTop.innerText = calculateMean(topSalaryReach);
+    meanGeneral.innerText = calculateMean(salarysReach).toFixed(2);
+    meanTop.innerText = calculateMean(topSalaryReach).toFixed(2);
+    console.log(orderedSalReach)
+    console.log(medianGeneral)
     
 }
 
@@ -44,19 +46,21 @@ function addingCitizen(){
         salary: salary || 15,
     })
 
-    let listCitizens = ` <table> List of citizens: ${reach.length} <tr> <th> Name </th> <th> Salary </th></tr>`
+    let listCitizens = ` <table> <tr> <th> Name </th> <th> Salary </th></tr>`
     for (let citizen of reach){
         listCitizens += `<tr> <td> ${citizen.name} </td> <td> ${citizen.salary} cdt </td> </tr>`
     }
     listCitizens += "</table>"
 
     citizens.innerHTML = listCitizens
+    citizensCount.innerHTML = `List of citizens: ${reach.length} `
 }
 
-let listCitizens = ` <table> List of citizens: ${reach.length}  <tr> <th> Name </th> <th> Salary </th></tr>`
+let listCitizens = ` <table> <tr> <th> Name </th> <th> Salary </th></tr>`
     for (let citizen of reach){
         listCitizens += `<tr> <td> ${citizen.name} </td> <td> ${citizen.salary} cdt </td> </tr>`
     }
     listCitizens += "</table>"
 
     citizens.innerHTML = listCitizens
+    citizensCount.innerHTML = `List of citizens: ${reach.length} `

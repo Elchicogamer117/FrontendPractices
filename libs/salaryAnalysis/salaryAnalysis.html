@@ -37,11 +37,12 @@
                 <label for="inputName"> Name: </label><br>
                 <input type="text" name="nameCitizen" id="inputName"><br>
                 <label for="inputSalary"> Salary: </label><br>
-                <input type="text" name="nameSalary" id="inputSalary"><br>
+                <input type="number" name="nameSalary" id="inputSalary"><br>
                 <button type="button" onclick="addingCitizen()" class="actionButton move"> <span> Add citizen </span> </button>
             </section>
         </section>
         <section class="cardRight">
+            <p id="citizensCount"> List of citizens </p>
             <div>
                 <table id="citizens"></table>
             </div>

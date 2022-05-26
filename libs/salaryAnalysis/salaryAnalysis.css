@@ -1,13 +1,13 @@
 :root {
     --clear: #FFFFFF;
-    --detailColor:
+    --detailColor:#ffffff00;
     --nothing: 2px;
     --sm: 16px;
     --md: 20px;
     --lg: 24px;
 }
 body {
-    min-height: 100vh;
+    height: 97vh;
     margin: 0;
     background-image: linear-gradient(to top, rgba(9, 32, 63, 0.526) 0%, rgba(83, 120, 149, 0.515) 100%),url('../../assets/img/wallpaper.jpg');
     backdrop-filter: blur( 10px );
@@ -17,21 +17,29 @@ body {
     font-family: 'Jura', sans-serif;
     color: var(--clear);
 }
+body::-webkit-scrollbar {
+    width: 0;
+    background:rgba(0, 11, 105, 0.75)
+}
+body::-webkit-scrollbar-thumb{
+    background: rgba(0, 11, 105, 0.75);
+    border-radius: 5px;
+}
 .banner {
     width: 100%;
     margin: 0 auto 0 auto;
     text-align: center;
-    font-size: 28px;
+    font-size: 20px;
     color: var(--clear);
     padding: 0;
 }
 .container{
     display: grid;
-    grid-template-columns: 75% 25%;
-    /* margin: 0 auto 0 auto; */
+    grid-template-columns: 65% 25%;
+    margin:0;
 }
 .cardLeft {
-    width: 85%;
+    width: 80%;
     height: 600px;
     margin: 4px auto 12px auto;
     background: rgba( 255, 253, 253, 0.2 );
@@ -40,7 +48,7 @@ body {
     -webkit-backdrop-filter: blur( 20px );
     border-radius: 12px;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     padding-top: 8px;
 
 }
@@ -56,7 +64,10 @@ body {
     grid-template-columns: auto auto;
 }
 .addCitizen label{
-    font-size:var(--lg)
+    font-size:var(--md)
+}
+.addCitizen p {
+    font-size: var(--lg);
 }
 #inputName,#inputSalary {
     width: 20%;
@@ -65,13 +76,40 @@ body {
     border-radius: 10px;
     opacity: 50%;
     transition: width 0.4s ease-in-out;
+    margin-bottom: 12px;
+    text-align: center;
 }
 #inputName:focus,#inputSalary:focus {
     width: 25%;
     border-inline: none;
 }
 .cardRight {
-    width: 100%;
+    width: 500px;
+    height: 500px;
     text-align: center;
-    /* margin: 0 auto 0 auto; */
+    font-size: var(--lg);
+    /* box-shadow: 0 8px 32px 0 #6b8cce86; */
+}
+.cardRight div {
+    width: 400px;
+    height: 580px;
+    overflow: auto;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    /* background: rgba( 255, 253, 253, 0.2 ); */
+}
+.cardRight div::-webkit-scrollbar {
+    width: 12px;
+    background:var(--detailColor);
+}
+.cardRight div::-webkit-scrollbar-thumb{
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+#citizensCount {
+    margin:  0;
+}
+#citizens {
+    margin: 4px auto 4px auto;
+    font-size: var(--sm);
 }
