@@ -1,13 +1,12 @@
 :root {
     --formsDetail: invert(90%) sepia(72%) saturate(2%) hue-rotate(265deg) brightness(105%) contrast(100%);
     --textcolor: #FFFFFF;
-    --detailColor: #90007a;
+    --detailColor: #808000;
 }
 body {
     min-height: 100vh;
     margin: 0;
-    background-color: #023e4d;
-    background: linear-gradient(#500000,#680000);
+    background: linear-gradient(#006400,#002000);
     font-family: 'Jura', sans-serif;
 }
 body::-webkit-scrollbar {
@@ -53,12 +52,13 @@ body::-webkit-scrollbar-thumb{
     margin: 40px auto 10px auto;
     text-align: center;
 }
-#squareInput {
+#circleInput {
     width: 300px;
     font-size: 28px;
     padding: 8px;
     border-radius: 15px;
     text-align: center;
+    margin-top: 4px;
 }
 #squareInput::placeholder {
     text-align: center;
@@ -74,7 +74,7 @@ body::-webkit-scrollbar-thumb{
     cursor: pointer;
 }
 .calculateButton:hover {
-    background-color: #AC0092;
+    background-color: #686800;
 }
 .dataShow {
     margin: 40px auto 20px auto;

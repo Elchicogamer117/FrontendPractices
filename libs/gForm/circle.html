@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Jura:wght@300;400;500;600;700&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="circle.css">
+    <link rel="shorcut icon" href="../../assets/icons/figuresLogo.svg">
+    <title>GForms</title>
+</head>
+<body>
+
+    <section class="banner">
+        <img src="../../assets/icons/gFormsLogo.svg" alt="logoName">
+    </section>
+
+    <nav class="navbar">
+        <a href="../../libs/gForm/square.html">
+            <img src="../../assets/img/gform/square.svg" alt="squareButton">
+        </a>
+        <a href="../../libs/gForm/triangle.html">
+            <img src="../../assets/img/gform/triangle.svg" alt="triangleButton">
+        </a>
+        <a href="../../libs/gForm/circle.html">
+            <img src="../../assets/img/gform/circle.svg" alt="circleButton">
+        </a>
+    </nav>
+
+    <section class="cardSquare">
+        <div class="dataInput">
+            <p> Calculate <br> the area and perimeter <br> of a circle </p>
+            <input id="circleInput" placeholder="Insert radio" type="number"> <br>
+            <button type="button" onclick="calculeCircle()" class="calculateButton"> Calculate </button>
+            
+        </div>
+        <div>
+            <section class="dataShow">
+                <img src="../../assets/img/gform/crInfo.svg" alt="squareDetails" >
+            </section>
+            <section class="results">
+                <div class="iconImg">
+                    <div>
+                        <img src="../../assets/img/gform/crArea.svg" alt="circleArea" class="apImg">
+                    </div>
+                    <div>
+                        <img src="../../assets/img/gform/crPer.svg" alt="circlePerimeter" class="apImg">
+                    </div>
+                </div>
+                <div>
+                        <p id="aResult"> Area </p>
+                        <p id="pResult"> Perimetro </p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <script src="./figures.js"></script>
+</body>
+</html>

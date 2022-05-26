@@ -7,47 +7,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Jura:wght@300;400;500;600;700&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="circle.css">
-    <link rel="shorcut icon" href="../assets/icons/logo.svg">
+    <link rel="stylesheet" href="square.css">
+    <link rel="shorcut icon" href="../../assets/icons/figuresLogo.svg">
     <title>GForms</title>
 </head>
 <body>
 
     <section class="banner">
-        <img src="../assets/icons/gForms.svg" alt="logoName">
+        <img src="../../assets/icons/gFormsLogo.svg" alt="logoName">
     </section>
 
     <nav class="navbar">
-        <a href="../figures.html">
-            <img src="../assets/img/square.svg" alt="squareButton">
+        <a href="../../libs/gForm/square.html">
+            <img src="../../assets/img/gform/square.svg" alt="squareButton">
         </a>
-        <a href="./triangle.html">
-            <img src="../assets/img/triangle.svg" alt="squareTriangle">
+        <a href="../../libs/gForm/triangle.html">
+            <img src="../../assets/img/gform/triangle.svg" alt="triangleButton">
         </a>
-        <a href="">
-            <img src="../assets/img/circle.svg" alt="squareCircle">
+        <a href="../../libs/gForm/circle.html">
+            <img src="../../assets/img/gform/circle.svg" alt="circleButton">
         </a>
     </nav>
 
     <section class="cardSquare">
         <div class="dataInput">
-            <p> Calculate <br> the area and perimeter <br> of a circle </p>
-            <input id="circleInput" placeholder="Insert radio" type="number"> <br>
-
-            <button type="button" onclick="calculeCircle()" class="calculateButton"> Calculate </button>
-            
+            <p> Calculate <br> the area and perimeter <br> of a square </p>
+            <!-- <label for="squareInput"> Side: </label> -->
+            <input id="squareInput" placeholder="Insert side" type="number"> <br>
+            <button type="button" onclick="calculeSquare()" class="calculateButton"> Calculate </button>
         </div>
+
         <div>
             <section class="dataShow">
-                <img src="../assets/img/cqInfo.svg" alt="squareDetails" >
+                <img src="../../assets/img/gform/sqInfo.svg" alt="squareInfo" >
             </section>
             <section class="results">
                 <div class="iconImg">
                     <div>
-                        <img src="../assets/img/cqArea.svg" alt="circleArea" class="apImg">
+                        <img src="../../assets/img/gform/sqArea.svg" alt="squareArea" class="apImg">
                     </div>
                     <div>
-                        <img src="../assets/img/cqPer.svg" alt="circlePerimeter" class="apImg">
+                        <img src="../../assets/img/gform/sqPer.svg" alt="squarePerimeter" class="apImg">
                     </div>
                 </div>
                 <div>
@@ -58,6 +58,6 @@
         </div>
     </section>
 
-    <script src="../figures.js"></script>
+    <script src="./figures.js"></script>
 </body>
 </html>
