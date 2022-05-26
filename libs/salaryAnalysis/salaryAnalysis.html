@@ -13,41 +13,40 @@
         <h1> Salary analysis </h1>
     </section>
 
-    <section class="cardLeft">
-        <section class="data">
-            <div class="analysis">
-                <p> Mean general: </p>
-                <p id="meanGeneral"> -- </p>
-                <p> Median general: </p>
-                <p id="medianGeneral"> -- </p>
-            </div>
-            <div class="analysis">
-                <p> Mean top 10%: </p>
-                <p id="meanTop"> -- </p>
-                <p> Median top 10%: </p>
-                <p id="medianTop"> -- </p>
+    <div class="container">
+        <section class="cardLeft">
+            <section class="data">
+                <div class="analysis">
+                    <p> Mean general: </p>
+                    <p id="meanGeneral"> -- </p>
+                    <p> Median general: </p>
+                    <p id="medianGeneral"> -- </p>
+                </div>
+                <div class="analysis">
+                    <p> Mean top 10%: </p>
+                    <p id="meanTop"> -- </p>
+                    <p> Median top 10%: </p>
+                    <p id="medianTop"> -- </p>
+                </div>
+            </section>
+            
+            <button type="button" onclick="calculateAnalysis()" class="actionButton move"> <span> Calculate </span> </button>
+            
+            <section class="addCitizen">
+                <p> Add citizen: </p>
+                <label for="inputName"> Name: </label><br>
+                <input type="text" name="nameCitizen" id="inputName"><br>
+                <label for="inputSalary"> Salary: </label><br>
+                <input type="text" name="nameSalary" id="inputSalary"><br>
+                <button type="button" onclick="addingCitizen()" class="actionButton move"> <span> Add citizen </span> </button>
+            </section>
+        </section>
+        <section class="cardRight">
+            <div>
+                <table id="citizens"></table>
             </div>
         </section>
-        
-        <button type="button" onclick="calculateAnalysis()" class="actionButton move"> <span> Calculate </span> </button>
-        
-        <section class="addCitizen">
-            <p> Add citizen: </p>
-            <label for="inputName"> Name: </label><br>
-            <input type="text" name="nameCitizen" id="inputName"><br>
-            <label for="inputSalary"> Salary: </label><br>
-            <input type="text" name="nameSalary" id="inputSalary"><br>
-            <button type="button" onclick="addingCitizen()" class="actionButton move"> <span> Add citizen </span> </button>
-        </section>
-    </section>
-    <section class="citizens">
-        <div>
-            List of citizens
-        </div>
-        <div>
-            <p id="citizens"></p>
-        </div>
-    </section>
+    </div>
     
     <script src="./salarys.js"></script>
     <script src="./analysis.js"></script>

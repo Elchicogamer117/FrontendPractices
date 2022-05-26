@@ -44,19 +44,19 @@ function addingCitizen(){
         salary: salary || 15,
     })
 
-    let listCitizens = "<ol>"
+    let listCitizens = ` <table> List of citizens: ${reach.length} <tr> <th> Name </th> <th> Salary </th></tr>`
     for (let citizen of reach){
-        listCitizens += `<li>  ${citizen.name}: ${citizen.salary} cdt </li>`
+        listCitizens += `<tr> <td> ${citizen.name} </td> <td> ${citizen.salary} cdt </td> </tr>`
     }
-    listCitizens += "</ol>"
+    listCitizens += "</table>"
 
     citizens.innerHTML = listCitizens
 }
 
-let listCitizens = "<ol>"
+let listCitizens = ` <table> List of citizens: ${reach.length}  <tr> <th> Name </th> <th> Salary </th></tr>`
     for (let citizen of reach){
-        listCitizens += `<li>  ${citizen.name}: ${citizen.salary} cdt </li>`
+        listCitizens += `<tr> <td> ${citizen.name} </td> <td> ${citizen.salary} cdt </td> </tr>`
     }
-    listCitizens += "</ol>"
+    listCitizens += "</table>"
 
     citizens.innerHTML = listCitizens
