@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shorcut icon" href="../../assets/icons/logoAnalysis.gif">
+    <link rel="shorcut icon" href="../../assets/icons/salaryLogo.gif">
     <link rel="stylesheet" href="./salaryAnalysis.css">
     <link rel="stylesheet" href="./buttons.css">
     <link rel="stylesheet" href="./responsive.css">
@@ -19,8 +19,10 @@
             </lord-icon>
             <h1> Salary analysis </h1>
     </section>
+
     <p class="description"> Comparison of salaries of the citizens of New York with different averages to see their differences and possible informative biases.</p>
-    <div class="container">
+
+    <section class="container">
         <section class="cardLeft">
             <section class="data">
                 <div class="analysis">
@@ -48,13 +50,14 @@
                 <button type="button" onclick="addingCitizen()" class="actionButton move"> <span> Add citizen </span> </button>
             </section>
         </section>
+
         <section class="cardRight">
             <p id="citizensCount"> List of citizens </p>
             <div>
                 <table id="citizens"></table>
             </div>
         </section>
-    </div>
+    </section>
     
     <script src="./salarys.js"></script>
     <script src="./analysis.js"></script>

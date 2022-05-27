@@ -5,6 +5,9 @@
     --xl: 28px;
 }
 @media (max-width: 1080px) {
+    body {
+        height: 150vh;
+    }
     .banner {
         font-size: var(--sm);
     }
@@ -40,6 +43,7 @@
         width: 100%;
         font-size: var(--md);
     }
+
 }
 @media (min-width: 1920px ) {
     .banner {
@@ -69,7 +73,6 @@
         margin:  0 0 20px 0;
     }
     .cardRight {
-
         font-size: var(--md);
         height: 750px;
     }
