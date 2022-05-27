@@ -1,4 +1,3 @@
-
 const squarePerimeter = (side) => side * 4
 const squareArea = (side) =>  side**2
 
@@ -39,11 +38,11 @@ function calculeTriangle(){
     pResponse.innerHTML = trianglePerimeter(side1,side2,base).toPrecision(6)
     aResponse.innerHTML = triangleArea(side1,side2,base).toPrecision(6)
 }
+
 function calculeCircle(){
     const input1 = document.getElementById("circleInput")
     const pResponse = document.getElementById("pResult")
     const aResponse = document.getElementById("aResult")
-
     const radio = parseInt(input1.value, 10) 
 
     pResponse.innerHTML = circlePerimeter(radio).toPrecision(6)

@@ -1,12 +1,13 @@
 :root {
     --formsDetail: invert(90%) sepia(72%) saturate(2%) hue-rotate(265deg) brightness(105%) contrast(100%);
-    --textcolor: #FFFFFF;
-    --detailColor: #5600FA;
+    --clearColor: #FFFFFF;
+    --detailColor: #500096;
+    --detailColotFocus: #7500db;
 }
 body {
     min-height: 100vh;
     margin: 0;
-    background: linear-gradient(#100085,#080048);
+    background: linear-gradient(#000096,#000038);
     font-family: 'Jura', sans-serif;
 }
 body::-webkit-scrollbar {
@@ -14,36 +15,33 @@ body::-webkit-scrollbar {
     background:var(--detailColor);
 }
 body::-webkit-scrollbar-thumb{
-    background: #FFFFFF;
-    border-radius: 5px;
+    border-radius: 4px;
+    background: var(--clearColor);
 }
 .banner {
     width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 0 auto;
 }
 .navbar {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: rgba(255, 255, 255, 0.5);
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 0 auto;
     border-radius: 25px 25px 0 0;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 .navbar a:hover {
-    background-color: #FFFFFF;
+    background-color: var(--clearColor);
     border-radius: 25px 25px 0 0;
 }
 .cardSquare {
     display: grid;
     grid-template-columns: auto auto;
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto 0 auto;
     border-radius: 0 0 25PX 25px;
-    color: var(--textcolor);
+    color: var(--clearColor);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .cardSquare p {
     font-size: 40px;
@@ -55,45 +53,41 @@ body::-webkit-scrollbar-thumb{
 #side1Input, #side2Input, #baseInput {
     width: 300px;
     font-size: 28px;
+    margin-top: 8px;
     padding: 8px;
-    border-radius: 15px;
-    text-align: center;
-    margin-top: 4px;
-}
-#squareInput::placeholder {
+    border-radius: 16px;
     text-align: center;
 }
 .calculateButton {
-    margin-top: 20px;
     width: 400px;
+    margin-top: 20px;
     font-size: 28px;
     padding: 8px;
-    background-color: var(--detailColor);
-    border-radius: 15px;
     border: none;
+    border-radius: 16px;
     cursor: pointer;
+    background-color: var(--detailColor);
 }
 .calculateButton:hover {
-    background-color: #4000b6;
+    background-color: var(--detailColotFocus)
 }
 .dataShow {
-    margin: 40px auto 20px auto;
     width: 250px;
+    margin: 40px auto 20px auto;
     filter: var(--formsDetail);
 }
 .results {
     display: grid;
     grid-template-columns: auto 1fr;
-    background-color: rgba(255, 255, 255, 0.5);
     width: 80%;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 60px auto;
     border-radius: 25px;
-    margin-bottom: 60px;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 .iconImg {
-    background-color: var(--detailColor);
-    border-radius: 25px 0 0 25px;
     padding-top: 20px;
+    border-radius: 25px 0 0 25px;
+    background-color: var(--detailColor);
 }
 .iconImg div {
     height: 50%;
