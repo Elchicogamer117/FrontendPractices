@@ -15,7 +15,6 @@
     </section>
 
     <section class="container">
-
         <section class="inputList">
             <label for="inputList"> Insert your number list </label> <br>
             <input id="inputList" type="text" placeholder="Ex. 15, 11, 2001, 117, 343, 216"> 
@@ -28,13 +27,13 @@
                 <input type="image" onclick="showMean()" src="../../assets/img/meMeMo/mean.svg" name="Mean">
             </div>
             <div class="cardCalculate">
-                <input type="image" onclick="showGMean()" src="../../assets/img/meMeMo/gmean.svg" name="Mean">
+                <input type="image" onclick="showGMean()" src="../../assets/img/meMeMo/gmean.svg" name="gmean">
             </div>
             <div class="cardCalculate">
-                <input type="image" onclick="showMedian()" src="../../assets/img/meMeMo/median.svg" name="Mean">
+                <input type="image" onclick="showMedian()" src="../../assets/img/meMeMo/median.svg" name="median">
             </div>
             <div class="cardCalculate">
-                <input type="image" onclick="showMode()" src="../../assets/img/meMeMo/mode.svg" name="Mean">
+                <input type="image" onclick="showMode()" src="../../assets/img/meMeMo/mode.svg" name="mode">
             </div>
         </section>
 
@@ -42,19 +41,20 @@
         <p id="description"></p>
 
     </section>
-    <p class="examples"> Some list examples: <br>
-        2000,10,800,1,50,10000,400,850,5000 <br>
-        1,2,2,3,3,3,4,4,4,4,5,5,5,5,5,6,6,6,6,6,6,<br>
-        7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9 <br>
-        1,2,5,3,9,7,1,3,5,8,1,5,4,6,8,0,0,6,7,9,4,8,2,3,3,1,6,5,2,0,3,7,8 <br>
-        15,11,2001,117,343,216,125,28,134
 
-    </p>
-
+    <section class="examples">
+        <p> Some list examples: <br>
+            2000,10,800,1,50,10000,400,850,5000 <br>
+            1,2,2,3,3,3,4,4,4,4,5,5,5,5,5,6,6,6,6,6,6,<br>
+            7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9 <br>
+            1,2,5,3,9,7,1,3,5,8,1,5,4,6,8,0,0,6,7,9,4,8,2,3,3,1,6,5,2,0,3,7,8 <br>
+            15,11,2001,117,343,216,125,28,134
+        </p>
+    </section>
+    
     <script src="./mean.js"></script>
     <script src="./gmean.js"></script>
     <script src="./median.js"></script>
     <script src="./mode.js"></script>
-
 </body>
 </html>

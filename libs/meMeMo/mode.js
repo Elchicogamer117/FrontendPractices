@@ -9,11 +9,9 @@ function calculateMode(list){
     })
     const orderedList = Object.entries(objectList).sort((a,b) => b[1] - a[1])
     const mode = orderedList[0]
-
     return mode[0]
 }
 
-//* Less code, more execution time
 function mode(arr){
     return arr.sort((a,b) =>
         arr.filter(v => v===a).length
