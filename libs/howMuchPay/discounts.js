@@ -9,20 +9,16 @@ function finalPrice(){
     const inputDiscount = document.getElementById("inputDiscount")
     const inputCoupon = document.getElementById("coupon")
     const resultPrice = document.getElementById("resultPrice")
-
     const price = inputPrice.value
+
     let discount 
     if (inputDiscount.value == ""){
         discount = 0
-    }
-    else {
+    } else {
         discount = parseFloat(inputDiscount.value)
     }
     const coupon = parseFloat(inputCoupon.value)
     const totalDiscount = discount + coupon
     
     resultPrice.innerText = calPriceDiscount(price, totalDiscount)
-    console.log(inputDiscount.value)
-    console.log(discount)
-
 }
