@@ -1,0 +1,113 @@
+:root {
+    --clear: #FFFFFF;
+}
+body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 25%);
+    margin: 0;
+    align-items: center;
+    font-family: 'Jura', sans-serif;
+}
+a {
+    text-decoration: none;
+    /* backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px ); */
+}
+/* .gForm {
+    background: rgba(0, 94, 110, 0.548);
+    background: linear-gradient(to top, rgba(0, 10, 22, 0.526) 0%, rgba(83, 120, 149, 0.515) 100%),url('./assets/img/index/gForm.jpg');
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+} */
+/* .gForm:hover {
+    transform: scale(105%);
+} */
+.gForm {
+    background: linear-gradient(to top, rgba(0, 10, 22, 0.526) 0%, rgba(83, 120, 149, 0.515) 100%),url('./assets/img/index/gForm.jpg');
+    
+}
+.howMuchPay {
+    background: linear-gradient(to top, rgba(0, 10, 22, 0.526) 0%, rgba(83, 120, 149, 0.515) 100%),url('./assets/img/index/howMuchPay.jpg');
+    
+}
+.meMeMo {
+    background: linear-gradient(to top, rgba(0, 10, 22, 0.526) 0%, rgba(83, 120, 149, 0.515) 100%),url('./assets/img/index/meMeMo.jpg');
+    
+}
+.salaryAnalysis {
+    background: linear-gradient(to top, rgba(0, 10, 22, 0.526) 0%, rgba(83, 120, 149, 0.515) 100%),url('./assets/img/index/salaryAnalysis.jpg');
+    
+}
+.gForm,.howMuchPay,.meMeMo,.salaryAnalysis {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    text-align: center;
+    color: var(--clear);
+    background-size: 150%;
+    background-position: center;
+    transition: .4s ease-in-out all;
+    /* transform: .5s ease-in-out all; */
+    /* transition: .4s ease-in-out all; */
+    /* background: rgba(0, 94, 110, 0.548);
+    /* backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px ); */
+}
+.gForm:hover,
+.howMuchPay:hover,
+.meMeMo:hover,
+.salaryAnalysis:hover {
+
+    background-size: 200%;
+}
+/* .gForm figure {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+.wallpaper {
+    height: 100%;
+    transition: .5s ease-in-out all;
+} */
+.card {
+    /* display: grid;
+    grid-template-columns: auto */
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: var(--clear);
+    /* width: auto ; */
+    /* padding: 0 50px 0 10px; */
+    text-align: center;
+    transition: .5s ease-in-out all;
+    /* background-color: aqua; */
+}
+.card:hover {
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    
+}
+.card p{
+    font-size: 20px;
+}
+
+
+.logo {
+    height: 80px;
+}
+
+#title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* .gForm,.howMuchPay,.meMeMo,.salaryAnalysis */
