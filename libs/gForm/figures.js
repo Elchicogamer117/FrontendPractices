@@ -32,9 +32,9 @@ function calculeTriangle(){
     const pResponse = document.getElementById("pResult")
     const aResponse = document.getElementById("aResult")
 
-    const side1 = parseInt(input1.value, 10) 
-    const side2 = parseInt(input2.value, 10) 
-    const base = parseInt(input3.value, 10) 
+    const side1 = parseFloat(input1.value, 10) 
+    const side2 = parseFloat(input2.value, 10) 
+    const base = parseFloat(input3.value, 10) 
     pResponse.innerHTML = trianglePerimeter(side1,side2,base).toPrecision(6)
     aResponse.innerHTML = triangleArea(side1,side2,base).toPrecision(6)
 }
@@ -43,7 +43,7 @@ function calculeCircle(){
     const input1 = document.getElementById("circleInput")
     const pResponse = document.getElementById("pResult")
     const aResponse = document.getElementById("aResult")
-    const radio = parseInt(input1.value, 10) 
+    const radio = parseFloat(input1.value, 10) 
 
     pResponse.innerHTML = circlePerimeter(radio).toPrecision(6)
     aResponse.innerHTML = circleArea(radio).toPrecision(6)
