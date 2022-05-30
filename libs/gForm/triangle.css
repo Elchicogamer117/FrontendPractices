@@ -4,6 +4,13 @@
     --detailColor: #500096;
     --detailColotFocus: #7500db;
 }
+.home {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    border-radius: 12px 12px 0 0;
+    background-color: rgba(255, 255, 255, 0.25);
+}
 body {
     min-height: 100vh;
     margin: 0;
@@ -107,4 +114,16 @@ body::-webkit-scrollbar-thumb{
     .calculateButton {
         width: 300px;
     }
+    .home {
+        left: 20px;
+    }
+}
+footer {
+    text-align: center;
+    color: var(--clearColor);
+    margin: 8px;
+}
+footer a {
+    text-decoration: none;
+    color: var(--clearColor);
 }
