@@ -3,8 +3,16 @@
     --detail: rgb(168, 140, 20);
     --detailFocus: rgb(128, 108, 18);;
 }
+.home {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    border-radius: 12px 12px 0 0;
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
 body {
-    min-height: 95vh;
+    min-height: 100vh;
     margin: 0;
     background: radial-gradient(rgb(0, 162, 214), rgb(0, 80, 100));
     font-family: 'Jura', sans-serif;
@@ -18,7 +26,7 @@ body::-webkit-scrollbar-thumb{
     background: var(--clear);
 }
 .title {
-    width: 500px;
+    width: 450px;
     margin: 0 auto 0 auto;
     padding: 0;
     text-align: center;
@@ -67,6 +75,15 @@ body::-webkit-scrollbar-thumb{
 .cardForm p {
     font-weight: bold;
 }
+footer {
+    text-align: center;
+    color: var(--clear);
+    margin: 8px;
+}
+footer a {
+    text-decoration: none;
+    color: var(--clear);
+}
 #resultPrice {
     margin: 0;
     color: var(--clear);
@@ -74,6 +91,6 @@ body::-webkit-scrollbar-thumb{
 }
 @media (max-width: 1080px) {
     .cardForm {
-        width: 500px;
+        width: 450px;
     }
 }
