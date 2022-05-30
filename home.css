@@ -17,10 +17,6 @@ body {
     align-items: center;
     font-family: 'Jura', sans-serif;
 }
-#introduction {
-    position: absolute;
-    top: 0;
-}
 a {
     text-decoration: none;
 }
@@ -41,7 +37,6 @@ a {
 
 }
 .gForm,.howMuchPay,.meMeMo,.salaryAnalysis {
-
     height: 100vh;
     text-align: center;
     color: var(--clear);
@@ -82,7 +77,6 @@ a {
     font-size: 28px;
     font-weight: bold;
 }
-
 footer {
     width: 100%;
     position: absolute;

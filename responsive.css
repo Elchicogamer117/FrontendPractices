@@ -1,0 +1,26 @@
+@media (max-width: 1080px) {
+    nav{
+        font-size: 20px;
+    }
+    body {
+        grid-template-columns: repeat(auto-fill, 50%);
+    }
+    .gForm,.howMuchPay,.meMeMo,.salaryAnalysis {
+    height: 50vh;
+    }
+    .card {
+        height: 50vh;
+    }
+    .card p{
+        font-size: 16px;
+    }
+    .logo {
+        height: 60px;
+    }
+    #title {
+        font-size: 20px;
+    }
+}
+footer {
+    font-size: 12px;
+}
