@@ -2,6 +2,13 @@
     --clear: #FFFFFF;
     --detailColor:#0000B4 ;
 }
+.home {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    border-radius: 12px 12px 0 0;
+    background-color: rgba(255, 255, 255, 0.2);
+}
 body {
     min-height: 100vh;
     margin: 0;
@@ -81,7 +88,19 @@ body::-webkit-scrollbar-thumb{
     font-weight: semibold;
     color: var(--clear);
 }
+footer {
+    text-align: center;
+    color: var(--clear);
+    margin: 60px auto 8px auto;
+}
+footer a {
+    text-decoration: none;
+    color: var(--clear);
+}
 @media (max-width: 640px) {
+    .home {
+        left: 40px;
+    }
     .cards {
         grid-template-columns:repeat(auto-fill, 50%);
     }
