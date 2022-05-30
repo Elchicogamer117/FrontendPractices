@@ -6,6 +6,16 @@
     --md: 20px;
     --lg: 24px;
 }
+.home {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    border-radius: 12px 12px 0 0;
+    background: rgba( 255, 253, 253, 0.2 );
+    box-shadow: 0 8px 32px 0 #6b8cce86;
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+}
 body {
     height: 100vh;
     margin: 0;
@@ -38,7 +48,6 @@ body::-webkit-scrollbar-thumb{
     text-align: center;
     font-size: var(--md);
     color: var(--clear);
-
 }
 .description {
     width: 100%;
@@ -121,4 +130,13 @@ body::-webkit-scrollbar-thumb{
 #citizens {
     margin: 4px auto 4px auto;
     font-size: var(--sm);
+}
+footer {
+    text-align: center;
+    color: var(--clear);
+    margin: 0;
+}
+footer a {
+    text-decoration: none;
+    color: var(--clear);
 }
